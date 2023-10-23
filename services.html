@@ -1,0 +1,148 @@
+<html>
+<head>
+	<title></title>
+	<link rel = "stylesheet" type = "text/css" href = "CSS/nav.css">
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		var options = {};
+    		if (document.location.search) {
+    			var array = document.location.search.split('=');
+    			var param = array[0].replace('?','');
+    			var value = array[1];
+    			if (param == 'animation'){
+    				options.animation = value;
+    			}
+    			else if (param == 'type_navigaton'){
+    				if (value == 'dots_preview'){
+    					$('.border_box').CSS({'marginBottom':'40px'});
+    					options['dots'] = true;
+    					options['preview'] = true;
+    				}
+    				else {
+    					options[value] = true;
+    					if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+    				}
+    			}
+    		}
+    		$('.box_skitter_large').skitter(options);
+    		//Highlight
+    		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+    	});
+    </script>
+</head>
+<body>
+	<div class = "Container">
+		<div class = "headcon">
+			<div class = "logo">
+				<img src = "images/hotelx.jpg" alt ="" width = "300" height = "110" /> 
+			</div>
+			<div class ="headright"><br>
+				<small> For more information, please call:</small></br>
+				<label> 123-456-7890</label>
+
+			</div>
+		</div>
+		<div class = "navbg">
+			<div class = "nav_inside">
+				<ul> 
+					<li><a href ="Home.html.html">Home</a></li>
+					<li><a href ="AboutUs.html">About Us</a></li>
+					<li><a href ="Services.html">Services</a></li>
+					<li><a href ="Careers.html">Careers</a></li>
+					<li><a href ="Resources.html">Resources</a></li>
+					<li><a href ="Contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class ="flashcon">
+		<div class ="box_skitter box_skitter_large" style= "z-index:0;">
+			<ul>
+				<li> <a href="#blindHeight"><img src = "./images/88.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./images/00.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./images/77.jpg"	class="random"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "midboxcon">
+		<div class = "midbox1">
+			<img src = "images/midbox7.jpg" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox2">
+			<img src = "images/midbox99.jpg" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox3">
+			<img src = "images/midbox2.jpg" alt ="" width = "334" height = "187" /> 
+		</div>
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+ <br>
+        <h1>WELCOME TO OUR LUXURY SERVICES HOTEL</h1>
+             <br>
+        <p>Luxury services often offer a range of high-end amenities and features that are not typically found in ordinary services.</p>
+        <br>
+        <h1>MORE INFO ABOUT LUXURY SERVICES</h1>
+        <br>
+          <p>Good services in the hotel Industry also helps create a positive all-round experience for guests and lead to satisfied customers.</p>
+        <br>
+           <h3>
+     <br>
+                 <ul>
+                    <h3>
+     	               <center>
+     	               <h3>
+        <div class="places">
+          <h2>Services One</h2>
+          <img src="./images/services1.jpg" style="width: 300px; height: 250px;">
+            <br>
+            <br>
+        <p>Typically Upscale,Upper Upscale and Luxury properties with a wide variety of onsite amenities,such as restuarants,exercise rooms spas.</p>
+    </div>
+    <div class="places">
+          <h2>Services Two</h2>
+          <img  src="./images/services2.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+            <br>
+            <br>
+             <p>Business hotels usually offer targeted services like car rental,airport transfer,event organization,financial services.</p>
+    </div>
+    <div class="places">
+         <h2>Services Tree</h2>
+         <img src="./images/services3.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+            <br>
+            <br>
+            <p>To provide travelers with shelter,food,refreshment,and simillar services and good,offerring on a commercial.</p>
+        <br>
+    <h3>
+     <br>
+                 <ul>
+                    <h3>
+                    	 <center>
+                    	 	<h3>
+      </ul>
+    <p>&copy;2023 MSI | ROSARIO MERIAM HOTEL </p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</footer>
+      </div>
+    </div>
+	</body>
+</html>
